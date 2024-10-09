@@ -308,7 +308,6 @@ p:has(> ol) {
 .postContent h2 {
   color: #ffffff;
   align-self: center;
-
   padding: 10px;
   text-align: center;
   padding-bottom: 50px;
@@ -348,17 +347,19 @@ p:has(> ol) {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  width: 100vw;
-  padding: 20px;
+  justify-content: flex-start;
+  width: 100%;
   gap: 20px;
   flex-wrap: wrap;
 }
 article.post-preview-container {
   display: flex;
-  width: 400px;
+  width: calc(100% / 3 - 20px);
   height: 400px;
   position: relative; /* This is important for absolute positioning inside */
+}
+article.post-preview-container a {
+  width: 100%;
 }
 h3.post-preview-title {
   color: #ffffff;
