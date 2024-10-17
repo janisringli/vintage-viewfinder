@@ -213,7 +213,9 @@ section img {
 section img:hover {
   transform: scale(1.05);
 }
-
+section img.post-thumbnail:hover {
+  transform: scale(1);
+}
 /* Image with border class inside section */
 section img.with-border {
   border: 2px solid #ccc; /* Adds a border */
@@ -306,7 +308,6 @@ p:has(> ol) {
 .postContent h2 {
   color: #ffffff;
   align-self: center;
-
   padding: 10px;
   text-align: center;
   padding-bottom: 50px;
@@ -341,6 +342,82 @@ p:has(> ol) {
 .feeling-lucky-header a img {
   width: 25px;
   height: auto;
+}
+.recent-blog-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+article.post-preview-container {
+  display: flex;
+  width: calc(100% / 3 - 20px);
+  height: 400px;
+  position: relative; /* This is important for absolute positioning inside */
+}
+article.post-preview-container a {
+  width: 100%;
+}
+h3.post-preview-title {
+  color: #ffffff;
+  position: absolute; /* Change to absolute */
+  top: 50%; /* Position at 50% from the top */
+  left: 50%; /* Position at 50% from the left */
+  transform: translate(-50%, -50%); /* Center the text */
+  z-index: 100; /* Ensure text is on top of the image */
+}
+.view-post-cta {
+  position: absolute; /* Change to absolute */
+  bottom: 50px; /* Position at 20px from the bottom */
+  left: 50%; /* Position at 50% from the left */
+  transform: translateX(-50%); /* Center the button */
+  z-index: 100; /* Ensure button is on top of the image */
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: transparent;
+  margin-top: 20px;
+  border: 1px solid white;
+}
+.post-preview-container:hover .view-post-cta {
+  background-color: white; /* Change background color on hover */
+  color: rgba(0, 0, 0, 0.5); /* Change text color on hover */
+}
+.post-thumbnail {
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin: 0 !important;
+  z-index: 0;
+}
+.post-preview-container a {
+  text-decoration: none;
+  height: inherit;
+  width: inherit;
+}
+.post-preview-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute; /* Change to absolute */
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+  color: white; /* Ensure text is visible */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Optional: add background to enhance visibility */
+  border-radius: 8px;
 }
 
 /* Mobile-friendly styles */
