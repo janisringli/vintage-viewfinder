@@ -351,6 +351,7 @@ p:has(> ol) {
   width: 100%;
   gap: 20px;
   flex-wrap: wrap;
+  padding-bottom: 50px;
 }
 article.post-preview-container {
   display: flex;
