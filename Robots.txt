@@ -1,5 +1,5 @@
 # Allow all web crawlers access to the entire site
 User-agent: *
 
-# Sitemap location (optional)
+# Sitemap location
 Sitemap: https://www.theshutterblog.com/sitemap.xml
