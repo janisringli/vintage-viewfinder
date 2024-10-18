@@ -267,6 +267,13 @@ footer p {
 p:has(+ ul),
 p:has(> ol) {
   margin-bottom: 0em !important; /* Remove margin below the paragraph */
+  /* border: 1px solid red;  */
+  text-align: start !important; /* Align text to the left */
+  width: 100% !important; /* Full width */
+}
+p:has(ul),
+p:has(> ol) {
+  margin-bottom: 0em !important; /* Remove margin below the paragraph */
   /* border: 1px solid red; */
   text-align: start !important; /* Align text to the left */
   width: 100% !important; /* Full width */
