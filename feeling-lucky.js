@@ -3,7 +3,9 @@ console.log("lucky you");
 // Array that mimics the list of files in the /posts/ directory
 const postsDirectory = [
   "choosing-the-right-film-stock.html",
-  "revival-of-film-photography.html",
+  "revival-of-film-photography.html",,
+  "making-money-with-your-drone.html",
+  "does-your-camera-matter.html",
 ];
 
 // Function to read content of each post
@@ -22,7 +24,6 @@ async function readContent() {
       }
 
       const text = await response.text();
-      console.log(text);
 
       // Pass the HTML content to the post list function
       constructPostList(text, post);
@@ -35,7 +36,6 @@ async function readContent() {
 // Function to create a post container with a title and image
 function constructPostList(htmlContent, post) {
   const postContainer = document.getElementById("postContainer");
-  console.log(postContainer);
 
   // Parse the HTML content string into a DOM object
   const parser = new DOMParser();
@@ -67,6 +67,7 @@ function constructPostList(htmlContent, post) {
 
   // If an image is found, append it to the post container
   if (imgTag) {
+    console.log(imgTag.src);
     postContent.style.backgroundImage = `url(${imgTag.src})`;
     // const image = document.createElement("img");
     // image.src = imgTag.src; // Use the same image source from the post
