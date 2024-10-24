@@ -11,14 +11,20 @@
 
   <!-- Blog Posts -->
   <url>
-    <loc>https://theshutterblog.com/posts/best-gear-for-drone-photographers</loc>
+    <loc>https://www.theshutterblog.com/posts/revival-of-film-photography</loc>
+    <lastmod>2024-10-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://theshutterblog.com/posts/best-gear-for-drone</loc>
     <lastmod>2024-10-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://theshutterblog.com/posts/choose-film-stock</loc>
+    <loc>https://theshutterblog.com/posts/choosing-the-right-film-stock</loc>
     <lastmod>2024-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -28,7 +34,7 @@
     <loc>https://theshutterblog.com/posts/does-your-camera-matter</loc>
     <lastmod>2024-10-17</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
 
   <url>
@@ -37,7 +43,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
+<url>
+    <loc>https://theshutterblog.com/posts/top-10-drone-locations</loc>
+    <lastmod>2024-10-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <!-- TOS, PP -->
   <url>
     <loc>https://theshutterblog.com/terms-of-use</loc>
